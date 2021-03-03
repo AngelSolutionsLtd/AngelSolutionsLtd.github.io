@@ -34,7 +34,7 @@ html.dark .intro1 {
 }
 
 html.dark .intro1 a {
-    color: #F16811 !important;
+    color: #1e88c9 !important;
 }
 
 html.dark a {
@@ -42,23 +42,23 @@ html.dark a {
 }
 
 html.dark a:hover {
-    color: #F16811;
+    color: #1e88c9;
 }
 
 html.dark .intro2 {
-    background-color: #F16811;
-    border-color: #DE7844;
+    background-color: #1e88c9;
+    border-color: #1e88c9;
 }
 
 html.dark .btn-primary {
-    background-color: #F16811;
-    border-color: #DE7844;
-    color: #000;
+    background-color: #1e88c9;
+    border-color: #1e88c9;
+    color: #fff;
 }
 
 html.dark .btn-primary:hover {
-    background-color: #DE7844;
-    border-color: #F16811;
+    background-color: #1e88c9;
+    border-color: #1e88c9;
 }
 
 html.dark .btn-info {
@@ -163,7 +163,9 @@ html #mode .dark {
         padding-left: 20px
     }
 }
-
+.docs-sidebar .nav {
+    flex-direction: column;
+}
 /* all links */
 .docs-sidebar .nav>li>a {
     color: #111;

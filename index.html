@@ -117,7 +117,9 @@
 							<li>
 								<a href="#line2">Layout</a>
 								<ul class="nav">
-									<li><a href="#line7_1">Grid</a></li>
+									<li><a href="#line2_1">Columns</a></li>
+									<li><a href="#line2_2">Responsive Columns</a></li>
+									<li><a href="#line2_3">Auto Columns</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -258,6 +260,7 @@
 									Layout
 									<hr />
 								</h2>
+								<h4 id="line2_1">Coulmns</h4>
 								<p>
 									Below is an example of a simple 3 column grid. As we are not
 									specifying a breakpoint with each class, these columns would
@@ -287,7 +290,69 @@
 										</div>
 									</div>
 								</pre>
+
+								<p class="mt-5">
+									Now, if we want these columns to change at different breakpoints we would use the breakpoint prefix classes as show in <a href="#line1">grid options</a> table above.
+								</p>
+
+								<h4 id="line2_2">Responsive Columns</h4>
+
+								<div class="bd-example">
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
+											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
+											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
+										</div>
+									</div>
+								</div>
+
+								<pre class="brush: html">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											One of three columns
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											One of three columns
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											One of three columns
+										</div>
+									</div>
+								</pre>
 								
+								<p>The example above uses 3 different breakpoint classes <code class="highlighter-rouge">.col-xs-12</code>, <code class="highlighter-rouge">.col-sm-6</code> and <code class="highlighter-rouge">.col-lg-4</code> These allow each column to scale to 100% width on smaller screens such as mobile devices, 50% width on tablet and 33% on desktop. 
+								</p>				
+								
+								<h4 id="line2_3">Auto Columns</h4>
+								
+								<div class="bd-example">
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
+											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
+											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
+										</div>
+									</div>
+								</div>
+
+								<pre class="brush: html">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											One of three columns
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											One of three columns
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-4">
+											One of three columns
+										</div>
+									</div>
+								</pre>
+								
+								<p>The example above uses 3 different breakpoint classes <code class="highlighter-rouge">.col-xs-12</code>, <code class="highlighter-rouge">.col-sm-6</code> and <code class="highlighter-rouge">.col-lg-4</code> These allow each column to scale to 100% width on smaller screens such as mobile devices, 50% width on tablet and 33% on desktop. 
+								</p>			
+
 							</div>
 						</div>
 					</section>

@@ -390,3 +390,10 @@ a:hover {
     padding: 10px;
     box-sizing: border-box;
 }
+
+.highlighter-rouge {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}

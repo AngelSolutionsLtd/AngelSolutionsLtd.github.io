@@ -1,2 +1,2 @@
 # AngelSolutionsLtd.github.io
-[angelsolutionsLtd.github.io](AngelSolutionsLtd.github.io)
+[angelsolutionsLtd.github.io](angelsolutionsltd.github.io)

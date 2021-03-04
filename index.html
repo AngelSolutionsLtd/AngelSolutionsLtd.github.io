@@ -652,6 +652,16 @@
 
 								<p>With the new grid, comes new media queries that will give us more control with styling at certain breakpoints. We can target styles for a speific breakpoint only or from a range.</p>
 					
+								<div class="bd-example">
+									<div class="container">
+										<div class="row justify-content-start">
+										  <div class="col-12">
+											<div class="magic">I am a block</div>
+										  </div>
+										</div>
+									</div>
+								</div>
+
 								<pre class="brush: scss">
 									@include media-breakpoint-up(xs) { ... }
 									@include media-breakpoint-up(sm) { ... }
@@ -660,10 +670,24 @@
 									@include media-breakpoint-up(xl) { ... }
 
 									// Example usage:
+									.magic {
+										background: #3a86ff;
+									}
+
 									@include media-breakpoint-up(sm) {
-										.some-class {
-											display: block;
+										.magic {
+											background: #ffbe0b;
 										}
+									}
+									@include media-breakpoint-up(md) {
+										.magic {
+											background: #8338ec;
+										}
+									}
+									@include media-breakpoint-up(lg) {
+										.magic {
+											background: #ff006e;
+										} 
 									}
 								</pre>								
 								<pre class="brush: scss">

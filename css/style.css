@@ -407,3 +407,28 @@ a:hover {
     border-radius: 3px;
     font-weight: bold;
 }
+.magic {
+    width: 100%;
+    height: 50px;
+    background: #3a86ff;
+    padding: 10px;
+    color: black;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .magic {
+        background:#ffbe0b;
+    } 
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .magic {
+        background:#8338ec;
+    } 
+}
+
+@media (min-width: 992px) { 
+    .magic {
+        background: #ff006e;
+    } 
+}

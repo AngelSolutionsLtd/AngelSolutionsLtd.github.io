@@ -68,13 +68,13 @@ html.dark .btn-info {
 }
 
 html.dark .btn-info:hover {
-    background-color: #9A9A9A;
-    border-color: #ABABAB;
+    background-color: #2b303b;
+    border-color: #2b303b;
 }
 html.dark .table{
-    background-color: #9A9A9A;
-    border-color: #ABABAB;
-    color: #111;
+    background-color: #2b303b;
+    border-color: #435a5f ;
+    color: #c0c5ce ;
 }
 
 html.dark code {
@@ -92,13 +92,17 @@ html.dark code {
 }
 
 html.dark .bd-example-2, html.dark .bd-example {
-    background-color: #9A9A9A;
-    border-color: #ABABAB;
-    color: #111;
+    background-color: #2b303b ;
+    border-color: #435a5f  ;
+    color: #fff;
 }
 html.dark .bd-example-2 .row, html.dark .bd-example .row {
-    background-color: #888888;
-    color: #111;
+    background-color: #2b303b ;
+    color: #c0c5ce ;
+}
+html.dark .bd-example-2 .row > *, html.dark .bd-example .row > * {
+    background-color: #566076 ;
+    color: #c0c5ce ;
 }
 
 #mode svg {

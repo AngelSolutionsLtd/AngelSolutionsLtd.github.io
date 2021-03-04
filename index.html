@@ -115,13 +115,22 @@
 						<ul class="nav">
 							<li><a href="#line1">Getting Started</a></li>
 							<li>
-								<a href="#line2">Layout</a>
+								<a href="#line2">Grid</a>
 								<ul class="nav">
 									<li><a href="#line2_1">Columns</a></li>
 									<li><a href="#line2_2">Responsive Columns</a></li>
 									<li><a href="#line2_3">Auto Columns</a></li>
 								</ul>
 							</li>
+							<li>
+								<a href="#line3">Alignment</a>
+								<ul class="nav">
+									<li><a href="#line3_1">Vertical Alignment</a></li>
+									<li><a href="#line3_2">Horizontal Alignment</a></li>
+								</ul>
+							</li>
+							<li><a href="#line4">Utilities</a></li>
+							<li><a href="#line5">Media Queries </a></li>
 						</ul>
 					</nav>
 				</div>
@@ -180,7 +189,7 @@
 
 								<h4>Grid Options</h4>
 								
-								<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+								<p>See how aspects of the grid system work across multiple devices.</p>
 								<table class="table table-bordered table-striped">
 									<thead>
 										<tr>
@@ -257,7 +266,7 @@
 						<div class="row">
 							<div class="col-md-12">
 								<h2 class="dark-text">
-									Layout
+									Grid
 									<hr />
 								</h2>
 								<h4 id="line2_1">Coulmns</h4>
@@ -325,37 +334,360 @@
 								</p>				
 								
 								<h4 id="line2_3">Auto Columns</h4>
-								
+
 								<div class="bd-example">
 									<div class="container">
 										<div class="row">
-											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
-											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
-											<div class="col-xs-12 col-sm-6 col-lg-4">One of three columns</div>
+											<div class="col-sm-4 col-md-2">Col</div>
+											<div class="col">Auto Column</div>
+											<div class="col-sm-4 col-md-2">Col</div>
 										</div>
 									</div>
 								</div>
 
 								<pre class="brush: html">
 									<div class="row">
-										<div class="col-xs-12 col-sm-6 col-lg-4">
-											One of three columns
+										<div class="col-sm-4 col-md-2">
+											Col
 										</div>
-										<div class="col-xs-12 col-sm-6 col-lg-4">
-											One of three columns
+										<div class="col">
+											Auto Column
 										</div>
-										<div class="col-xs-12 col-sm-6 col-lg-4">
-											One of three columns
+										<div class="col-sm-4 col-md-2">
+											Col
 										</div>
 									</div>
 								</pre>
 								
-								<p>The example above uses 3 different breakpoint classes <code class="highlighter-rouge">.col-xs-12</code>, <code class="highlighter-rouge">.col-sm-6</code> and <code class="highlighter-rouge">.col-lg-4</code> These allow each column to scale to 100% width on smaller screens such as mobile devices, 50% width on tablet and 33% on desktop. 
+								<p>Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown above), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
 								</p>			
 
 							</div>
 						</div>
 					</section>
+
+					<section id="line3" class="section">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="dark-text">
+									Alignment
+									<hr />
+								</h2>
+
+								<p>Use flexbox alignment utilities to vertically and horizontally align columns.</p>
+
+								<h4 id="line3_1">Vertical Alignment</h4>
+
+								<div class="bd-example-2">
+									<div class="container">
+										<div class="row align-items-start">
+											<div class="col-sm">One of three columns</div>
+											<div class="col-sm">One of three columns</div>
+											<div class="col-sm">One of three columns</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="bd-example-2">
+									<div class="container">
+										<div class="row align-items-center">
+											<div class="col-sm">One of three columns</div>
+											<div class="col-sm">One of three columns</div>
+											<div class="col-sm">One of three columns</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="bd-example-2">
+									<div class="container">
+										<div class="row align-items-end">
+											<div class="col-sm">One of three columns</div>
+											<div class="col-sm">One of three columns</div>
+											<div class="col-sm">One of three columns</div>
+										</div>
+									</div>
+								</div>
+
+								<pre class="brush: html">
+										<div class="container">
+											<div class="row align-items-start">
+												<div class="col-sm">One of three columns</div>
+												<div class="col-sm">One of three columns</div>
+												<div class="col-sm">One of three columns</div>
+											</div>
+
+											<div class="row align-items-center">
+												<div class="col-sm">One of three columns</div>
+												<div class="col-sm">One of three columns</div>
+												<div class="col-sm">One of three columns</div>
+											</div>
+
+											<div class="row align-items-end">
+												<div class="col-sm">One of three columns</div>
+												<div class="col-sm">One of three columns</div>
+												<div class="col-sm">One of three columns</div>
+											</div>
+										</div>
+								</pre>
+
+								<h4 id="line3_2" class="mt-5">Horizontal Alignment</h4>
+
+								<div class="bd-example">
+									<div class="container">
+										<div class="row justify-content-start">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-center">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-end">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-around">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-between">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+									</div>
+								</div>
+
+								<pre class="brush: html">
+									<div class="container">
+										<div class="row justify-content-start">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-center">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-end">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-around">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+										<div class="row justify-content-between">
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										  <div class="col-4">
+											One of two columns
+										  </div>
+										</div>
+									</div>
+								</pre>								
+							</div>
+						</div>
+					</section>
+
+					<section id="line4" class="section">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="dark-text">
+									Utilities
+									<hr />
+								</h2>
+
+								<p>Change the value of the display property with our responsive display utility classes. We purposely support only a subset of all possible values for display. Classes can be combined for various effects as you need.</p>
+
+								<p>Display utility classes that apply to all <a href="#line_2"></a>breakpoints</a>, from <code class="highlighter-rouge">xs</code> to <code class="highlighter-rouge">xl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code class="highlighter-rouge">min-width: 0;</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
+
+								<p>As such, the classes are named using the format:</p>
+
+								<ul>
+									<li><code class="highlighter-rouge">.d-{value}</code> for <code class="highlighter-rouge">xs</code></li>
+									<li><code class="highlighter-rouge">.d-{breakpoint}-{value}</code> for <code class="highlighter-rouge">sm</code>, <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, and <code class="highlighter-rouge">xl</code>.</li>
+								</ul>
+
+								  <p>Where <em>value</em> is one of:</p>
+
+								  <ul>
+									<li><code class="highlighter-rouge">none</code></li>
+									<li><code class="highlighter-rouge">inline</code></li>
+									<li><code class="highlighter-rouge">inline-block</code></li>
+									<li><code class="highlighter-rouge">block</code></li>
+									<li><code class="highlighter-rouge">table</code></li>
+									<li><code class="highlighter-rouge">table-cell</code></li>
+									<li><code class="highlighter-rouge">table-row</code></li>
+									<li><code class="highlighter-rouge">flex</code></li>
+									<li><code class="highlighter-rouge">inline-flex</code></li>
+								  </ul>
+
+								  <div class="bd-example">
+									<div class="container">
+										<div class="row align-items-end">
+											<div class="col-4 d-none d-md-block">One of three columns</div>
+											<div class="col-4 d-lg-none">One of three columns</div>
+											<div class="col-4 d-none d-md-block">One of three columns</div>
+										</div>
+									</div>
+								</div>
+
+								<pre class="brush: html">
+										<div class="container">
+											<div class="row align-items-end">
+												<div class="col-4 d-none d-md-block">One of three columns</div>
+												<div class="col-4 d-lg-none">One of three columns</div>
+												<div class="col-4 d-none d-md-block">One of three columns</div>
+											</div>
+										</pre>
+								</pre>		
+
+								<p>The example above will toggle the display of the middle column until the <code class="highlighter-rouge">lg</code> breakpoint.</p>														  
+							</div>
+						</div>
+
+						<table class="table table-bordered table-striped">
+							<thead>
+							  <tr>
+								<th>Screen Size</th>
+								<th>Class</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>Hidden on all</td>
+								<td><code class="highlighter-rouge">.d-none</code></td>
+							  </tr>
+							  <tr>
+								<td>Hidden only on xs</td>
+								<td><code class="highlighter-rouge">.d-none .d-sm-block</code></td>
+							  </tr>
+							  <tr>
+								<td>Hidden only on sm</td>
+								<td><code class="highlighter-rouge">.d-sm-none .d-md-block</code></td>
+							  </tr>
+							  <tr>
+								<td>Hidden only on md</td>
+								<td><code class="highlighter-rouge">.d-md-none .d-lg-block</code></td>
+							  </tr>
+							  <tr>
+								<td>Hidden only on lg</td>
+								<td><code class="highlighter-rouge">.d-lg-none .d-xl-block</code></td>
+							  </tr>
+							  <tr>
+								<td>Hidden only on xl</td>
+								<td><code class="highlighter-rouge">.d-xl-none</code></td>
+							  </tr>
+							  <tr>
+								<td>Visible on all</td>
+								<td><code class="highlighter-rouge">.d-block</code></td>
+							  </tr>
+							  <tr>
+								<td>Visible only on xs</td>
+								<td><code class="highlighter-rouge">.d-block .d-sm-none</code></td>
+							  </tr>
+							  <tr>
+								<td>Visible only on sm</td>
+								<td><code class="highlighter-rouge">.d-none .d-sm-block .d-md-none</code></td>
+							  </tr>
+							  <tr>
+								<td>Visible only on md</td>
+								<td><code class="highlighter-rouge">.d-none .d-md-block .d-lg-none</code></td>
+							  </tr>
+							  <tr>
+								<td>Visible only on lg</td>
+								<td><code class="highlighter-rouge">.d-none .d-lg-block .d-xl-none</code></td>
+							  </tr>
+							  <tr>
+								<td>Visible only on xl</td>
+								<td><code class="highlighter-rouge">.d-none .d-xl-block</code></td>
+							  </tr>
+							</tbody>
+						  </table>
+					</section>
+
+					<section id="line5" class="section">
+						<div class="row">
+							<div class="col-md-12">
+								<h2 class="dark-text">
+									Media Queries
+									<hr />
+								</h2>
+
+								<p>With the new grid, comes new media queries that will give us more control with styling at certain breakpoints. We can target styles for a speific breakpoint only or from a range.</p>
+					
+								<pre class="brush: scss">
+									@include media-breakpoint-up(xs) { ... }
+									@include media-breakpoint-up(sm) { ... }
+									@include media-breakpoint-up(md) { ... }
+									@include media-breakpoint-up(lg) { ... }
+									@include media-breakpoint-up(xl) { ... }
+
+									// Example usage:
+									@include media-breakpoint-up(sm) {
+										.some-class {
+											display: block;
+										}
+									}
+								</pre>								
+								<pre class="brush: scss">
+									@include media-breakpoint-down(xs) { ... }
+									@include media-breakpoint-down(sm) { ... }
+									@include media-breakpoint-down(md) { ... }
+									@include media-breakpoint-down(lg) { ... }
+								</pre>								
+								<pre class="brush: scss">
+									@include media-breakpoint-only(xs) { ... }
+									@include media-breakpoint-only(sm) { ... }
+									@include media-breakpoint-only(md) { ... }
+									@include media-breakpoint-only(lg) { ... }
+									@include media-breakpoint-only(xl) { ... }
+								</pre>								
+								<pre class="brush: scss">
+									@include media-breakpoint-between(md, xl) { ... }
+								</pre>								
+							</div>
+						</div>
+					</section>
+
+
+
 				</div>
 				<!-- // end .col -->
 			</div>
@@ -379,6 +711,7 @@
 	<script src="js/syntax-highlighter/scripts/shCore.js"></script>
 	<script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
 	<script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+	<script src="js/syntax-highlighter/scripts/shBrushScss.js"></script>
 	<script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
 </body>
 

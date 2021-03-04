@@ -38,7 +38,7 @@ html.dark .intro1 a {
 }
 
 html.dark a {
-    color: #CC8548;
+    color: #1e88c9;
 }
 
 html.dark a:hover {
@@ -71,7 +71,16 @@ html.dark .btn-info:hover {
     background-color: #9A9A9A;
     border-color: #ABABAB;
 }
+html.dark .table{
+    background-color: #9A9A9A;
+    border-color: #ABABAB;
+    color: #111;
+}
 
+html.dark code {
+    background:  #efefef;
+    padding: 2px;
+}
 #mode {
     cursor: pointer;
     position: fixed;
@@ -80,6 +89,16 @@ html.dark .btn-info:hover {
     z-index: 1;
     border-radius: 16px;
     line-height: 0;
+}
+
+html.dark .bd-example-2, html.dark .bd-example {
+    background-color: #9A9A9A;
+    border-color: #ABABAB;
+    color: #111;
+}
+html.dark .bd-example-2 .row, html.dark .bd-example .row {
+    background-color: #888888;
+    color: #111;
 }
 
 #mode svg {

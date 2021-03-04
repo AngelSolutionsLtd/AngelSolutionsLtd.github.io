@@ -380,11 +380,21 @@ a:hover {
 }
 
 
-.bd-example {
+.bd-example, .bd-example-2 {
     background: #F0F0F0;
+    margin-top: 40px;
+}
+.bd-example{
     min-height: 150px;
 }
-.bd-example .row > * {
+
+.bd-example .container .row {
+    height: auto;
+}
+.bd-example-2 .container .row {
+    height: 150px;
+}
+.bd-example .row > *, .bd-example-2 .row > * {
     border: 1px solid #B0B0B0;
     background: #E0E0E0;
     padding: 10px;
